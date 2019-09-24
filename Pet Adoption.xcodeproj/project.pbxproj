@@ -6,176 +6,14 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		223124822333F5DA0090CED1 /* CustomerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223124722333F5DA0090CED1 /* CustomerCell.swift */; };
-		223124832333F5DA0090CED1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223124732333F5DA0090CED1 /* DataManager.swift */; };
-		223124842333F5DA0090CED1 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223124742333F5DA0090CED1 /* CustomerViewController.swift */; };
-		223124852333F5DA0090CED1 /* KitchenMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223124752333F5DA0090CED1 /* KitchenMenuViewController.swift */; };
-		223124862333F5DA0090CED1 /* db.sqlite3-shm in Resources */ = {isa = PBXBuildFile; fileRef = 223124772333F5DA0090CED1 /* db.sqlite3-shm */; };
-		223124872333F5DA0090CED1 /* db.sqlite3-wal in Resources */ = {isa = PBXBuildFile; fileRef = 223124782333F5DA0090CED1 /* db.sqlite3-wal */; };
-		223124882333F5DA0090CED1 /* db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 223124792333F5DA0090CED1 /* db.sqlite3 */; };
-		223124892333F5DA0090CED1 /* RaysPizzeriaUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231247A2333F5DA0090CED1 /* RaysPizzeriaUtils.swift */; };
-		2231248A2333F5DA0090CED1 /* KitchenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231247B2333F5DA0090CED1 /* KitchenViewController.swift */; };
-		2231248B2333F5DA0090CED1 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231247D2333F5DA0090CED1 /* Order.swift */; };
-		2231248C2333F5DA0090CED1 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231247E2333F5DA0090CED1 /* Customer.swift */; };
-		2231248D2333F5DA0090CED1 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2231247F2333F5DA0090CED1 /* Pizza.swift */; };
-		2231248E2333F5DA0090CED1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223124802333F5DA0090CED1 /* MenuViewController.swift */; };
-		2231248F2333F5DA0090CED1 /* PizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223124812333F5DA0090CED1 /* PizzaViewController.swift */; };
-		22917360232AC46E0050B4C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291735F232AC46E0050B4C0 /* AppDelegate.swift */; };
-		22917362232AC46E0050B4C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22917361232AC46E0050B4C0 /* ViewController.swift */; };
-		22917365232AC46E0050B4C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22917363232AC46E0050B4C0 /* Main.storyboard */; };
-		22917367232AC46E0050B4C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22917366232AC46E0050B4C0 /* Assets.xcassets */; };
-		2291736A232AC46E0050B4C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22917368232AC46E0050B4C0 /* LaunchScreen.storyboard */; };
-		22DBD1292333F1BE00C729FA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBD1282333F1BE00C729FA /* DataManager.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		22DBD1272333F1A300C729FA /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		223124722333F5DA0090CED1 /* CustomerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerCell.swift; sourceTree = "<group>"; };
-		223124732333F5DA0090CED1 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		223124742333F5DA0090CED1 /* CustomerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
-		223124752333F5DA0090CED1 /* KitchenMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KitchenMenuViewController.swift; sourceTree = "<group>"; };
-		223124772333F5DA0090CED1 /* db.sqlite3-shm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "db.sqlite3-shm"; sourceTree = "<group>"; };
-		223124782333F5DA0090CED1 /* db.sqlite3-wal */ = {isa = PBXFileReference; lastKnownFileType = file; path = "db.sqlite3-wal"; sourceTree = "<group>"; };
-		223124792333F5DA0090CED1 /* db.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite3; sourceTree = "<group>"; };
-		2231247A2333F5DA0090CED1 /* RaysPizzeriaUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaysPizzeriaUtils.swift; sourceTree = "<group>"; };
-		2231247B2333F5DA0090CED1 /* KitchenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KitchenViewController.swift; sourceTree = "<group>"; };
-		2231247D2333F5DA0090CED1 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
-		2231247E2333F5DA0090CED1 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
-		2231247F2333F5DA0090CED1 /* Pizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
-		223124802333F5DA0090CED1 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		223124812333F5DA0090CED1 /* PizzaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaViewController.swift; sourceTree = "<group>"; };
-		2291735C232AC46E0050B4C0 /* Pet Adoption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet Adoption.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2291735F232AC46E0050B4C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22917361232AC46E0050B4C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		22917364232AC46E0050B4C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		22917366232AC46E0050B4C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		22917369232AC46E0050B4C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2291736B232AC46E0050B4C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22DBD1282333F1BE00C729FA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		22917359232AC46E0050B4C0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
-		22069F67232B2F14003C840D /* Images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		223124762333F5DA0090CED1 /* pizza-db.cblite2 */ = {
-			isa = PBXGroup;
-			children = (
-				223124772333F5DA0090CED1 /* db.sqlite3-shm */,
-				223124782333F5DA0090CED1 /* db.sqlite3-wal */,
-				223124792333F5DA0090CED1 /* db.sqlite3 */,
-			);
-			path = "pizza-db.cblite2";
-			sourceTree = "<group>";
-		};
-		2231247C2333F5DA0090CED1 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				2231247D2333F5DA0090CED1 /* Order.swift */,
-				2231247E2333F5DA0090CED1 /* Customer.swift */,
-				2231247F2333F5DA0090CED1 /* Pizza.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		22917353232AC46E0050B4C0 = {
 			isa = PBXGroup;
 			children = (
-				2291735E232AC46E0050B4C0 /* Pet Adoption */,
-				2291735D232AC46E0050B4C0 /* Products */,
-				22DBD1222333F11100C729FA /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		2291735D232AC46E0050B4C0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2291735C232AC46E0050B4C0 /* Pet Adoption.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2291735E232AC46E0050B4C0 /* Pet Adoption */ = {
-			isa = PBXGroup;
-			children = (
-				223124722333F5DA0090CED1 /* CustomerCell.swift */,
-				223124742333F5DA0090CED1 /* CustomerViewController.swift */,
-				223124732333F5DA0090CED1 /* DataManager.swift */,
-				223124752333F5DA0090CED1 /* KitchenMenuViewController.swift */,
-				2231247B2333F5DA0090CED1 /* KitchenViewController.swift */,
-				223124802333F5DA0090CED1 /* MenuViewController.swift */,
-				2231247C2333F5DA0090CED1 /* Models */,
-				223124762333F5DA0090CED1 /* pizza-db.cblite2 */,
-				223124812333F5DA0090CED1 /* PizzaViewController.swift */,
-				2231247A2333F5DA0090CED1 /* RaysPizzeriaUtils.swift */,
-				22069F67232B2F14003C840D /* Images */,
-				2291735F232AC46E0050B4C0 /* AppDelegate.swift */,
-				22917361232AC46E0050B4C0 /* ViewController.swift */,
-				22917363232AC46E0050B4C0 /* Main.storyboard */,
-				22DBD1282333F1BE00C729FA /* DataManager.swift */,
-				22917366232AC46E0050B4C0 /* Assets.xcassets */,
-				22917368232AC46E0050B4C0 /* LaunchScreen.storyboard */,
-				2291736B232AC46E0050B4C0 /* Info.plist */,
-			);
-			path = "Pet Adoption";
-			sourceTree = "<group>";
-		};
-		22DBD1222333F11100C729FA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		2291735B232AC46E0050B4C0 /* Pet Adoption */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22917384232AC46F0050B4C0 /* Build configuration list for PBXNativeTarget "Pet Adoption" */;
-			buildPhases = (
-				22917358232AC46E0050B4C0 /* Sources */,
-				22917359232AC46E0050B4C0 /* Frameworks */,
-				2291735A232AC46E0050B4C0 /* Resources */,
-				22DBD1272333F1A300C729FA /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pet Adoption";
-			productName = "Pet Adoption";
-			productReference = 2291735C232AC46E0050B4C0 /* Pet Adoption.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		22917354232AC46E0050B4C0 /* Project object */ = {
@@ -184,11 +22,6 @@
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Crime Scene Investigators";
-				TargetAttributes = {
-					2291735B232AC46E0050B4C0 = {
-						CreatedOnToolsVersion = 10.3;
-					};
-				};
 			};
 			buildConfigurationList = 22917357232AC46E0050B4C0 /* Build configuration list for PBXProject "Pet Adoption" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -199,73 +32,13 @@
 				Base,
 			);
 			mainGroup = 22917353232AC46E0050B4C0;
-			productRefGroup = 2291735D232AC46E0050B4C0 /* Products */;
+			productRefGroup = 22917353232AC46E0050B4C0;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2291735B232AC46E0050B4C0 /* Pet Adoption */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		2291735A232AC46E0050B4C0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				223124862333F5DA0090CED1 /* db.sqlite3-shm in Resources */,
-				2291736A232AC46E0050B4C0 /* LaunchScreen.storyboard in Resources */,
-				223124872333F5DA0090CED1 /* db.sqlite3-wal in Resources */,
-				223124882333F5DA0090CED1 /* db.sqlite3 in Resources */,
-				22917367232AC46E0050B4C0 /* Assets.xcassets in Resources */,
-				22917365232AC46E0050B4C0 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		22917358232AC46E0050B4C0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				223124892333F5DA0090CED1 /* RaysPizzeriaUtils.swift in Sources */,
-				2231248F2333F5DA0090CED1 /* PizzaViewController.swift in Sources */,
-				223124842333F5DA0090CED1 /* CustomerViewController.swift in Sources */,
-				2231248B2333F5DA0090CED1 /* Order.swift in Sources */,
-				223124852333F5DA0090CED1 /* KitchenMenuViewController.swift in Sources */,
-				2231248A2333F5DA0090CED1 /* KitchenViewController.swift in Sources */,
-				22917362232AC46E0050B4C0 /* ViewController.swift in Sources */,
-				223124832333F5DA0090CED1 /* DataManager.swift in Sources */,
-				2231248E2333F5DA0090CED1 /* MenuViewController.swift in Sources */,
-				2231248C2333F5DA0090CED1 /* Customer.swift in Sources */,
-				2231248D2333F5DA0090CED1 /* Pizza.swift in Sources */,
-				22917360232AC46E0050B4C0 /* AppDelegate.swift in Sources */,
-				22DBD1292333F1BE00C729FA /* DataManager.swift in Sources */,
-				223124822333F5DA0090CED1 /* CustomerCell.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		22917363232AC46E0050B4C0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22917364232AC46E0050B4C0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		22917368232AC46E0050B4C0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22917369232AC46E0050B4C0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		22917382232AC46F0050B4C0 /* Debug */ = {
@@ -384,50 +157,6 @@
 			};
 			name = Release;
 		};
-		22917385232AC46F0050B4C0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BH9BS3QV7C;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SRCROOT)/**",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = "Pet Adoption/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CrimeSceneInvestigators.Pet-Adoption";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		22917386232AC46F0050B4C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BH9BS3QV7C;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SRCROOT)/**",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = "Pet Adoption/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CrimeSceneInvestigators.Pet-Adoption";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -436,15 +165,6 @@
 			buildConfigurations = (
 				22917382232AC46F0050B4C0 /* Debug */,
 				22917383232AC46F0050B4C0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		22917384232AC46F0050B4C0 /* Build configuration list for PBXNativeTarget "Pet Adoption" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22917385232AC46F0050B4C0 /* Debug */,
-				22917386232AC46F0050B4C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
