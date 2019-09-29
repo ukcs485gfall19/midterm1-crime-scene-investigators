@@ -31,9 +31,84 @@ import AVFoundation
 
 
 
-class ViewController: UIViewController {
+class ViewController: UIPageViewController, UIPageViewControllerDataSource {
   
-  @IBOutlet weak var basketTop: UIImageView!
+  var arrPageTitle: NSArray = NSArray()
+  var arrPagePhoto: NSArray = NSArray()
+  var arrVisited: [Bool] = []
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    arrPageTitle = ["Eminem Doggo", "Icy Doggo", "Evil Cade"];
+    arrPagePhoto = ["1.jpg", "2.jpg", "3.jpg"];
+    arrVisited = [false, false,false];
+    
+    self.dataSource = self
+    self.setViewControllers([getViewControllerAtIndex(index: 0)] as [UIViewController], direction: UIPageViewController.NavigationDirection.forward, animated: false, completion: nil)
+  }
+  
+  /***********************/
+  func getViewControllerAtIndex(index: NSInteger) -> PageContentViewController
+  {
+    // Create a new view controller and pass suitable data.
+    let pageContentViewController = self.storyboard?.instantiateViewController(withIdentifier: "PageContentViewController") as! PageContentViewController
+    pageContentViewController.strTitle = "\(arrPageTitle[index])"
+    pageContentViewController.strPhotoName = "\(arrPagePhoto[index])"
+    pageContentViewController.pageIndex = index
+    return pageContentViewController
+  }
+  /***********************/
+  func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
+  {
+    let pageContent: PageContentViewController = viewController as! PageContentViewController
+    var index = pageContent.pageIndex
+    arrVisited[index] = true;
+    if (index == NSNotFound)
+    {
+      return nil
+    }
+    index+=1;
+    if(index == arrPageTitle.count){
+      return nil
+    }
+/*    if (arrVisited[index] == true)
+    {
+      if (arrVisited.last == true)
+      {
+        return nil
+      }
+      return getViewControllerAtIndex(index: index)
+    }*/
+    return getViewControllerAtIndex(index: index)
+  }
+  
+  /****************/
+  func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
+  {
+    let pageContent: PageContentViewController = viewController as! PageContentViewController
+    var index = pageContent.pageIndex
+    arrVisited[index] = true;
+    if (index == NSNotFound)
+    {
+      return nil;
+    }
+    index+=1;
+    if(index == arrPageTitle.count){
+      return nil
+    }
+/*    if (arrVisited[index] == true)
+    {
+      if (arrVisited.last == true)
+      {
+        return nil
+      }
+      return getViewControllerAtIndex(index: index)
+    }*/
+    return getViewControllerAtIndex(index: index)
+  }
+  
+ /* @IBOutlet weak var basketTop: UIImageView!
   @IBOutlet weak var basketBottom: UIImageView!
   
   @IBOutlet weak var fabricTop: UIImageView!
@@ -174,5 +249,5 @@ class ViewController: UIViewController {
     }
   }
 
-  
+  */
 }

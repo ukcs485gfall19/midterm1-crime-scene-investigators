@@ -11,6 +11,7 @@
 		8EFF27481A3DA28C00FAFE70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF27471A3DA28C00FAFE70 /* ViewController.swift */; };
 		8EFF274D1A3DA28C00FAFE70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFF274C1A3DA28C00FAFE70 /* Images.xcassets */; };
 		8EFF27671A3DB36400FAFE70 /* squish.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8EFF27661A3DB36400FAFE70 /* squish.caf */; };
+		A493C8372341089700E568E2 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A493C8362341089700E568E2 /* PageContentViewController.swift */; };
 		F56634BB209E3C88005A65A5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56634BA209E3C88005A65A5 /* Launch Screen.storyboard */; };
 		F585BD3C2098F88600166230 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F585BD3A2098F88600166230 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -22,6 +23,7 @@
 		8EFF27471A3DA28C00FAFE70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8EFF274C1A3DA28C00FAFE70 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8EFF27661A3DB36400FAFE70 /* squish.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = squish.caf; sourceTree = "<group>"; };
+		A493C8362341089700E568E2 /* PageContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		F56634BA209E3C88005A65A5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F585BD3B2098F88600166230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +63,7 @@
 				8EFF27651A3DB36400FAFE70 /* Sounds */,
 				8EFF27451A3DA28C00FAFE70 /* AppDelegate.swift */,
 				8EFF27471A3DA28C00FAFE70 /* ViewController.swift */,
+				A493C8362341089700E568E2 /* PageContentViewController.swift */,
 				F585BD3A2098F88600166230 /* Main.storyboard */,
 				8EFF274C1A3DA28C00FAFE70 /* Images.xcassets */,
 				8EFF27431A3DA28C00FAFE70 /* Supporting Files */,
@@ -122,10 +125,9 @@
 			};
 			buildConfigurationList = 8EFF273B1A3DA28C00FAFE70 /* Build configuration list for PBXProject "Picnic" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -158,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A493C8372341089700E568E2 /* PageContentViewController.swift in Sources */,
 				8EFF27481A3DA28C00FAFE70 /* ViewController.swift in Sources */,
 				8EFF27461A3DA28C00FAFE70 /* AppDelegate.swift in Sources */,
 			);
