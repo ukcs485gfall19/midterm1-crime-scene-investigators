@@ -31,7 +31,7 @@ import AVFoundation
 
 
 
-class ViewController: UIPageViewController, UIPageViewControllerDataSource {
+class ViewController: UIPageViewController, UIPageViewControllerDataSource, UIGestureRecognizerDelegate {
   
   var arrPageTitle: NSArray = NSArray()
   var arrPagePhoto: NSArray = NSArray()

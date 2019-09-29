@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EB777F9234149680004DB79 /* PetInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB777F8234149680004DB79 /* PetInformationViewController.swift */; };
+		1EB777FB23414E250004DB79 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB777FA23414E250004DB79 /* Pet.swift */; };
 		8EFF27461A3DA28C00FAFE70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF27451A3DA28C00FAFE70 /* AppDelegate.swift */; };
 		8EFF27481A3DA28C00FAFE70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF27471A3DA28C00FAFE70 /* ViewController.swift */; };
 		8EFF274D1A3DA28C00FAFE70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFF274C1A3DA28C00FAFE70 /* Images.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EB777F8234149680004DB79 /* PetInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInformationViewController.swift; sourceTree = "<group>"; };
+		1EB777FA23414E250004DB79 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		8EFF27401A3DA28C00FAFE70 /* Picnic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picnic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFF27441A3DA28C00FAFE70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EFF27451A3DA28C00FAFE70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +68,9 @@
 				8EFF27451A3DA28C00FAFE70 /* AppDelegate.swift */,
 				8EFF27471A3DA28C00FAFE70 /* ViewController.swift */,
 				A493C8362341089700E568E2 /* PageContentViewController.swift */,
+				1EB777F8234149680004DB79 /* PetInformationViewController.swift */,
 				F585BD3A2098F88600166230 /* Main.storyboard */,
+				1EB777FA23414E250004DB79 /* Pet.swift */,
 				8EFF274C1A3DA28C00FAFE70 /* Images.xcassets */,
 				8EFF27431A3DA28C00FAFE70 /* Supporting Files */,
 				F56634BA209E3C88005A65A5 /* Launch Screen.storyboard */,
@@ -160,9 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EB777FB23414E250004DB79 /* Pet.swift in Sources */,
 				A493C8372341089700E568E2 /* PageContentViewController.swift in Sources */,
 				8EFF27481A3DA28C00FAFE70 /* ViewController.swift in Sources */,
 				8EFF27461A3DA28C00FAFE70 /* AppDelegate.swift in Sources */,
+				1EB777F9234149680004DB79 /* PetInformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

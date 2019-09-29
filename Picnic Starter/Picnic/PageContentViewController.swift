@@ -8,14 +8,14 @@
 
 import UIKit
 
-class PageContentViewController: UIViewController {
+class PageContentViewController: UIViewController, UIGestureRecognizerDelegate {
 
 
 
     @IBOutlet weak var doggo_label: UILabel!
-    
     @IBOutlet weak var doggo_pics: UIImageView!
     
+    var tap: UITapGestureRecognizer!
     var pageIndex: Int = 0
     var strTitle: String!
     var strPhotoName: String!
@@ -24,12 +24,31 @@ class PageContentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+      var swipeUp = UISwipeGestureRecognizer(target: self, action: Selector(("respondToSwipeGesture:")))
+      swipeUp.direction = UISwipeGestureRecognizer.Direction.up
+        self.view.addGestureRecognizer(swipeUp)
 
+        
         // Do any additional setup after loading the view.
+        doggo_pics.isUserInteractionEnabled = true
+        doggo_pics.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap(_:))))
         doggo_pics.image = UIImage(named: strPhotoName)
         doggo_label.text = strTitle
     }
+  
+  func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+
+    if gesture is UISwipeGestureRecognizer {
+
+
+          print("Swiped Up")
+      }
+  }
     
+    @objc func handleTap(_ gesture: UITapGestureRecognizer) {
+      print("Doggo Tapped!")
+    }
 
     /*
     // MARK: - Navigation
