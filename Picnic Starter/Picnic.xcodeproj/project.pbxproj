@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		224EE8DC23417DA500865F2B /* bark.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 224EE8DB23417DA500865F2B /* bark.mp3 */; };
 		8EFF27461A3DA28C00FAFE70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF27451A3DA28C00FAFE70 /* AppDelegate.swift */; };
 		8EFF27481A3DA28C00FAFE70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF27471A3DA28C00FAFE70 /* ViewController.swift */; };
 		8EFF274D1A3DA28C00FAFE70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFF274C1A3DA28C00FAFE70 /* Images.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		224EE8DB23417DA500865F2B /* bark.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bark.mp3; sourceTree = "<group>"; };
 		8EFF27401A3DA28C00FAFE70 /* Picnic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picnic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFF27441A3DA28C00FAFE70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EFF27451A3DA28C00FAFE70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		8EFF27651A3DB36400FAFE70 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				224EE8DB23417DA500865F2B /* bark.mp3 */,
 				8EFF27661A3DB36400FAFE70 /* squish.caf */,
 			);
 			path = Sounds;
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F585BD3C2098F88600166230 /* Main.storyboard in Resources */,
+				224EE8DC23417DA500865F2B /* bark.mp3 in Resources */,
 				8EFF27671A3DB36400FAFE70 /* squish.caf in Resources */,
 				F56634BB209E3C88005A65A5 /* Launch Screen.storyboard in Resources */,
 				8EFF274D1A3DA28C00FAFE70 /* Images.xcassets in Resources */,
