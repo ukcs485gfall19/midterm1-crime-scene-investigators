@@ -3,7 +3,7 @@
 //  Picnic
 //
 //  Created by Kelsey Cole on 9/29/19.
-//  Copyright © 2019 Ray Wenderlich. All rights reserved.
+//  Copyright © 2019 Crime Scene Investigators. All rights reserved.
 //
 
 import UIKit
