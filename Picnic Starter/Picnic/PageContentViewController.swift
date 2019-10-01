@@ -10,8 +10,6 @@ import UIKit
 
 class PageContentViewController: UIViewController {
 
-
-
     @IBOutlet weak var doggo_label: UILabel!
     
     @IBOutlet weak var doggo_pics: UIImageView!

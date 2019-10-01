@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		224EE8DC23417DA500865F2B /* bark.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 224EE8DB23417DA500865F2B /* bark.mp3 */; };
+		22BE99FB2342C9BA00BA8ABD /* LaunchAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE99FA2342C9BA00BA8ABD /* LaunchAnimation.swift */; };
 		8EFF27461A3DA28C00FAFE70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF27451A3DA28C00FAFE70 /* AppDelegate.swift */; };
 		8EFF27481A3DA28C00FAFE70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF27471A3DA28C00FAFE70 /* ViewController.swift */; };
 		8EFF274D1A3DA28C00FAFE70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFF274C1A3DA28C00FAFE70 /* Images.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		224EE8DB23417DA500865F2B /* bark.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bark.mp3; sourceTree = "<group>"; };
+		22BE99FA2342C9BA00BA8ABD /* LaunchAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAnimation.swift; sourceTree = "<group>"; };
 		8EFF27401A3DA28C00FAFE70 /* Picnic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picnic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EFF27441A3DA28C00FAFE70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EFF27451A3DA28C00FAFE70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				8EFF27651A3DB36400FAFE70 /* Sounds */,
 				8EFF27451A3DA28C00FAFE70 /* AppDelegate.swift */,
+				22BE99FA2342C9BA00BA8ABD /* LaunchAnimation.swift */,
 				8EFF27471A3DA28C00FAFE70 /* ViewController.swift */,
 				A493C8362341089700E568E2 /* PageContentViewController.swift */,
 				F585BD3A2098F88600166230 /* Main.storyboard */,
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A493C8372341089700E568E2 /* PageContentViewController.swift in Sources */,
+				22BE99FB2342C9BA00BA8ABD /* LaunchAnimation.swift in Sources */,
 				8EFF27481A3DA28C00FAFE70 /* ViewController.swift in Sources */,
 				8EFF27461A3DA28C00FAFE70 /* AppDelegate.swift in Sources */,
 			);

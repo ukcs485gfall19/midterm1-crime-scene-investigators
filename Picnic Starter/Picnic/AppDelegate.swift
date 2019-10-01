@@ -33,8 +33,6 @@ import AVFoundation
 class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   
-  
-  
   //FUNCTION FOR PLAYING SOUNDS ANYWHERE IN APP
   /*This was found at: https://stackoverflow.com/questions/43715285/xcode-swift-adding-sound-effects-to-launch-screen/43715368
  */
@@ -57,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
     
     playSound(file: "bark", ext: "mp3") // CALLING PLAYING SOUND FUNCTION.
-    Thread.sleep(forTimeInterval: 2.0)  // Delaying launchscreen so sound can fully play
+    //Thread.sleep(forTimeInterval: 2.0)  // Delaying launchscreen so sound can fully play
     
     return true
   }
