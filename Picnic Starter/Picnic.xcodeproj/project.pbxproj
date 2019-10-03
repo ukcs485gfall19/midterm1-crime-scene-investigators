@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1ED640F12346AD28007E7640 /* PetInfoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED640F02346AD28007E7640 /* PetInfoTableVC.swift */; };
+		1ED640F32346B1A5007E7640 /* LikedPetsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED640F22346B1A5007E7640 /* LikedPetsVC.swift */; };
 		224EE8DC23417DA500865F2B /* bark.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 224EE8DB23417DA500865F2B /* bark.mp3 */; };
 		22BE99FB2342C9BA00BA8ABD /* LaunchAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE99FA2342C9BA00BA8ABD /* LaunchAnimation.swift */; };
 		8EFF27461A3DA28C00FAFE70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF27451A3DA28C00FAFE70 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		1ED640F02346AD28007E7640 /* PetInfoTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInfoTableVC.swift; sourceTree = "<group>"; };
+		1ED640F22346B1A5007E7640 /* LikedPetsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPetsVC.swift; sourceTree = "<group>"; };
 		224EE8DB23417DA500865F2B /* bark.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bark.mp3; sourceTree = "<group>"; };
 		22BE99FA2342C9BA00BA8ABD /* LaunchAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAnimation.swift; sourceTree = "<group>"; };
 		8EFF27401A3DA28C00FAFE70 /* Picnic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picnic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +74,7 @@
 				8EFF27471A3DA28C00FAFE70 /* ViewController.swift */,
 				A493C8362341089700E568E2 /* PageContentViewController.swift */,
 				1ED640F02346AD28007E7640 /* PetInfoTableVC.swift */,
+				1ED640F22346B1A5007E7640 /* LikedPetsVC.swift */,
 				F585BD3A2098F88600166230 /* Main.storyboard */,
 				8EFF274C1A3DA28C00FAFE70 /* Images.xcassets */,
 				8EFF27431A3DA28C00FAFE70 /* Supporting Files */,
@@ -172,6 +175,7 @@
 			files = (
 				A493C8372341089700E568E2 /* PageContentViewController.swift in Sources */,
 				1ED640F12346AD28007E7640 /* PetInfoTableVC.swift in Sources */,
+				1ED640F32346B1A5007E7640 /* LikedPetsVC.swift in Sources */,
 				22BE99FB2342C9BA00BA8ABD /* LaunchAnimation.swift in Sources */,
 				8EFF27481A3DA28C00FAFE70 /* ViewController.swift in Sources */,
 				8EFF27461A3DA28C00FAFE70 /* AppDelegate.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  PetInfoTableVC.swift
+//  LikedPetsVC.swift
 //  Picnic
 //
 //  Created by  on 10/3/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PetInfoTableVC: UITableViewController {
+class LikedPetsVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
