@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="REY-92-atf">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="gqS-IH-vw1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -47,6 +46,7 @@
                 <swipeGestureRecognizer direction="up" id="yzg-cX-wrH">
                     <connections>
                         <action selector="swipeHandler:" destination="vXZ-lx-hvc" id="qgZ-s9-6RA"/>
+                        <segue destination="KPx-4a-tta" kind="modal" id="g8b-Oe-hem"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -74,7 +74,6 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="nextButton:" destination="REY-92-atf" eventType="touchUpInside" id="rXK-bq-t3x"/>
-                                    <segue destination="gqS-IH-vw1" kind="modal" identifier="CoolEffect" id="M6L-i5-Hb2"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tongue" translatesAutoresizingMaskIntoConstraints="NO" id="CfZ-md-lWc">
@@ -95,10 +94,38 @@
         <!--View Controller-->
         <scene sceneID="XQO-Xf-x3p">
             <objects>
-                <pageViewController storyboardIdentifier="mainVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="gqS-IH-vw1" customClass="ViewController" customModule="Picnic" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="mainVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="gqS-IH-vw1" customClass="ViewController" customModule="Picnic" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yea-mN-EZF"/>
+                </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQ9-Fr-wtD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-493" y="302"/>
+        </scene>
+        <!--Pet Information View Controller-->
+        <scene sceneID="fBz-a4-4jN">
+            <objects>
+                <viewController title="Pet Information View Controller" id="KPx-4a-tta" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0za-MQ-9Xz"/>
+                        <viewControllerLayoutGuide type="bottom" id="r6l-4X-wJH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LUQ-7N-hjH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="34l-Do-kwt" customClass="PetInformationTable">
+                                <rect key="frame" x="20" y="20" width="374" height="780"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pHM-9x-PRm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cnz-6O-laX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="431.8840579710145" y="1027.9017857142858"/>
         </scene>
     </scenes>
     <resources>

@@ -11,16 +11,11 @@ import UIKit
 
 class LaunchAnimation: UIViewController {
     
-  //button.sendActionsForControlEvents(.TouchUpInside)
-    @IBAction func nextButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "CoolEffect", sender: nil)
-    }
-    
     @IBOutlet weak var tongue: UIImageView!
     
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-    print("here")
+
 //    performSegue(withIdentifier: "CoolEffect", sender: nil)
   }
   
