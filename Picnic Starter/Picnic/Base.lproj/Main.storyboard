@@ -33,6 +33,10 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.74439362046632129" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="yzg-cX-wrH" appends="YES" id="cD7-WN-VBE"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="doggo_label" destination="x5h-9h-aE9" id="AhJ-H5-atB"/>
@@ -40,6 +44,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="yzg-cX-wrH">
+                    <connections>
+                        <action selector="swipeHandler:" destination="vXZ-lx-hvc" id="qgZ-s9-6RA"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="431.8840579710145" y="302.00892857142856"/>
         </scene>

@@ -18,6 +18,11 @@ class PageContentViewController: UIViewController {
     var strTitle: String!
     var strPhotoName: String!
     
+    @IBAction func swipeHandler(_ sender: UISwipeGestureRecognizer) {
+        if (sender.state == .ended){
+            print("god bless america")
+        }
+    }
     
     
     override func viewDidLoad() {

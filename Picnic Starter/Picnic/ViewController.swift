@@ -56,30 +56,24 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
     pageContentViewController.strTitle = "\(arrPageTitle[index])"
     pageContentViewController.strPhotoName = "\(arrPagePhoto[index])"
     pageContentViewController.pageIndex = index
+  
     return pageContentViewController
   }
+  
   /***********************/
   func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
   {
     let pageContent: PageContentViewController = viewController as! PageContentViewController
     var index = pageContent.pageIndex
-    arrVisited[index] = true;
     if (index == NSNotFound)
     {
-      return nil
+      return nil;
     }
     index+=1;
-    if(index == arrPageTitle.count){
-      return nil
-    }
-/*    if (arrVisited[index] == true)
+    if (index == arrPageTitle.count)
     {
-      if (arrVisited.last == true)
-      {
-        return nil
-      }
-      return getViewControllerAtIndex(index: index)
-    }*/
+      return getViewControllerAtIndex(index: 0)
+    }
     return getViewControllerAtIndex(index: index)
   }
   
@@ -88,24 +82,15 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
   {
     let pageContent: PageContentViewController = viewController as! PageContentViewController
     var index = pageContent.pageIndex
-    arrVisited[index] = true;
     if (index == NSNotFound)
     {
-      return nil;
-    }
-    index+=1;
-    if(index == arrPageTitle.count){
       return nil
     }
-/*    if (arrVisited[index] == true)
-    {
-      if (arrVisited.last == true)
-      {
-        return nil
-      }
-      return getViewControllerAtIndex(index: index)
-    }*/
-    return getViewControllerAtIndex(index: index)
+    if (index == 0){
+      return getViewControllerAtIndex(index: arrPageTitle.count-1)
+    }
+    index-=1;
+    return getViewControllerAtIndex(index:index)
   }
   
  /* @IBOutlet weak var basketTop: UIImageView!
