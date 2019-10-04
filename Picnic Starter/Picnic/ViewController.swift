@@ -61,14 +61,18 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
   
     return pageContentViewController
   }
-  var counter = 0
+  var counter1 = 0
   /***********************/
   func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
   {
     
     let pageContent: PageContentViewController = viewController as! PageContentViewController
     var index = pageContent.pageIndex
-    let actualIndex = index
+    var actualIndex = index
+    actualIndex-=1
+    if actualIndex < 0 {
+      actualIndex = arrPageTitle.count-1
+    }
     if (index == NSNotFound)
     {
       return nil;
@@ -76,43 +80,53 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
     index+=1;
     if (index == arrPageTitle.count)
     {
-      print("swipe left")
-      print(actualIndex)
-      dislikedPets.append(arrPageTitle[actualIndex] as! String)
+      if counter1 != 0 {
+        print("swipe left")
+        print(actualIndex)
+        dislikedPets.append(arrPageTitle[actualIndex] as! String)
+      }
+      counter1+=1
       return getViewControllerAtIndex(index: 0)
     }
-    if counter != 0 {
+    if counter1 != 0 {
       print("swipe left")
       print(actualIndex)
       dislikedPets.append(arrPageTitle[actualIndex] as! String)
     }
-    counter+=1
+    counter1+=1
     return getViewControllerAtIndex(index: index)
   }
-  
+  var counter2 = 0
   /****************/
   func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
   {
     let pageContent: PageContentViewController = viewController as! PageContentViewController
     var index = pageContent.pageIndex
-    let actualIndex = index
+    var actualIndex = index
+    actualIndex+=1
+    if actualIndex > arrPageTitle.count-1 {
+      actualIndex = 0
+    }
     if (index == NSNotFound)
     {
       return nil
     }
     if (index == 0){
-      print("swipe right")
-      print(actualIndex)
-      likedPets.append(arrPageTitle[actualIndex] as! String)
+      if counter2 != 0 {
+        print("swipe right")
+        print(actualIndex)
+        likedPets.append(arrPageTitle[actualIndex] as! String)
+      }
+      counter2+=1
       return getViewControllerAtIndex(index: arrPageTitle.count-1)
     }
     index-=1;
-    if counter != 0 {
+    if counter2 != 0 {
       print("swipe right")
       print(actualIndex)
       likedPets.append(arrPageTitle[actualIndex] as! String)
     }
-    counter+=1
+    counter2+=1
     return getViewControllerAtIndex(index:index)
   }
   

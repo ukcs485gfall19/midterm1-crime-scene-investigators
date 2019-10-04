@@ -41,7 +41,6 @@ class LikedPetsVC: UITableViewController {
 
         // Configure the cell...
         cell.textLabel?.text = names[indexPath.row]
-
         return cell
     }
   
