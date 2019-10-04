@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="gqS-IH-vw1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="REY-92-atf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -97,6 +97,7 @@
         <!--Launch Animation-->
         <scene sceneID="9WU-Yd-wgM">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEh-cI-0P8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="REY-92-atf" userLabel="Launch Animation" customClass="LaunchAnimation" customModule="Picnic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="shF-ih-3ED"/>
@@ -111,11 +112,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwH-eq-o0C">
-                                <rect key="frame" x="331" y="824" width="46" height="30"/>
+                                <rect key="frame" x="323" y="824" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Tap Here">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
                                 <connections>
-                                    <action selector="nextButton:" destination="REY-92-atf" eventType="touchUpInside" id="rXK-bq-t3x"/>
+                                    <segue destination="gqS-IH-vw1" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="4oO-QT-VD9"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tongue" translatesAutoresizingMaskIntoConstraints="NO" id="CfZ-md-lWc">
@@ -129,7 +132,6 @@
                         <outlet property="tongue" destination="CfZ-md-lWc" id="uV4-Ut-U5j"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VEh-cI-0P8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1481.1594202898552" y="300.66964285714283"/>
         </scene>
