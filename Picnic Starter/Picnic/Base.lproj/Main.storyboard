@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="gqS-IH-vw1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="REY-92-atf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -38,7 +38,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="bold"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FzX-ac-xI7" kind="modal" modalTransitionStyle="crossDissolve" id="CpZ-h1-6rp"/>
+                                    <segue destination="94R-hY-q7J" kind="modal" id="Tl1-dm-1Kr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,9 +63,41 @@
             </objects>
             <point key="canvasLocation" x="431.8840579710145" y="302.00892857142856"/>
         </scene>
+        <!--Liked Pets-->
+        <scene sceneID="5CH-Ku-Dca">
+            <objects>
+                <tableViewController title="Liked Pets" id="94R-hY-q7J" customClass="LikedPetsVC" customModule="Picnic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xvq-X3-db8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="rows" id="aIi-1d-vsK">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="rows" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aIi-1d-vsK" id="Mwx-A3-wqs">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="94R-hY-q7J" id="aJ4-uJ-dLp"/>
+                            <outlet property="delegate" destination="94R-hY-q7J" id="gms-L6-w9k"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="table" destination="xvq-X3-db8" id="cyc-lx-9aV"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9nk-or-5CE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1346.376811594203" y="303.34821428571428"/>
+        </scene>
         <!--Launch Animation-->
         <scene sceneID="9WU-Yd-wgM">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEh-cI-0P8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="REY-92-atf" userLabel="Launch Animation" customClass="LaunchAnimation" customModule="Picnic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="shF-ih-3ED"/>
@@ -80,11 +112,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwH-eq-o0C">
-                                <rect key="frame" x="331" y="824" width="46" height="30"/>
+                                <rect key="frame" x="323" y="824" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Tap Here">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
                                 <connections>
-                                    <action selector="nextButton:" destination="REY-92-atf" eventType="touchUpInside" id="rXK-bq-t3x"/>
+                                    <segue destination="gqS-IH-vw1" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="4oO-QT-VD9"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tongue" translatesAutoresizingMaskIntoConstraints="NO" id="CfZ-md-lWc">
@@ -98,7 +132,6 @@
                         <outlet property="tongue" destination="CfZ-md-lWc" id="uV4-Ut-U5j"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VEh-cI-0P8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1481.1594202898552" y="300.66964285714283"/>
         </scene>
@@ -137,25 +170,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cnz-6O-laX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="431.8840579710145" y="1027.9017857142858"/>
-        </scene>
-        <!--Liked Pets View Controler-->
-        <scene sceneID="G4x-yK-Ggn">
-            <objects>
-                <viewController title="Liked Pets View Controler" id="FzX-ac-xI7" customClass="LikedPetsVC" customModule="Picnic" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3lg-ws-JZa"/>
-                        <viewControllerLayoutGuide type="bottom" id="4cP-Y3-oZn"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NXo-rx-hif">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="jPB-i1-Wsi"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yIS-yy-bLo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1480" y="301"/>
         </scene>
     </scenes>
     <resources>

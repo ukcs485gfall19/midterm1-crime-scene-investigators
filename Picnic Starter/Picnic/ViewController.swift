@@ -29,17 +29,19 @@
 import UIKit
 import AVFoundation
 
+var arrPageTitle: NSArray = NSArray()
+var arrPagePhoto: NSArray = NSArray()
+var arrVisited: [Bool] = []
 
+var likedPets: [String] = []
+var dislikedPets: [String] = []
 
 class ViewController: UIPageViewController, UIPageViewControllerDataSource {
-  
-  var arrPageTitle: NSArray = NSArray()
-  var arrPagePhoto: NSArray = NSArray()
-  var arrVisited: [Bool] = []
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    //test data
     arrPageTitle = ["Eminem Doggo", "Icy Doggo", "Evil Cade"];
     arrPagePhoto = ["1.jpg", "2.jpg", "3.jpg"];
     arrVisited = [false, false,false];
@@ -59,12 +61,16 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
   
     return pageContentViewController
   }
-  
+  var counter1 = 0 // counter for disliked list appending to not run on page load
   /***********************/
-  func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
-  {
+  func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
     let pageContent: PageContentViewController = viewController as! PageContentViewController
     var index = pageContent.pageIndex
+    var actualIndex = index
+    actualIndex-=1
+    if actualIndex < 0 {
+      actualIndex = arrPageTitle.count-1
+    }
     if (index == NSNotFound)
     {
       return nil;
@@ -72,26 +78,55 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
     index+=1;
     if (index == arrPageTitle.count)
     {
+      if counter1 != 0 {
+        //adding pet to dislike list
+        dislikedPets.append(arrPageTitle[actualIndex] as! String)
+      }
+      counter1+=1
       return getViewControllerAtIndex(index: 0)
     }
+    if counter1 != 0 {
+      //adding pet to dislike list
+      dislikedPets.append(arrPageTitle[actualIndex] as! String)
+    }
+    counter1+=1
     return getViewControllerAtIndex(index: index)
   }
-  
+  var counter2 = 0 // counter for liked list appending to not run on page load
   /****************/
   func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
   {
     let pageContent: PageContentViewController = viewController as! PageContentViewController
     var index = pageContent.pageIndex
+    var actualIndex = index
+    actualIndex+=1
+    if actualIndex > arrPageTitle.count-1 {
+      actualIndex = 0
+    }
     if (index == NSNotFound)
     {
       return nil
     }
     if (index == 0){
+      if counter2 != 0 {
+        //adding pet to dislike list
+        likedPets.append(arrPageTitle[actualIndex] as! String)
+      }
+      counter2+=1
       return getViewControllerAtIndex(index: arrPageTitle.count-1)
     }
     index-=1;
+    if counter2 != 0 {
+      //adding pet to dislike list
+      likedPets.append(arrPageTitle[actualIndex] as! String)
+    }
+    counter2+=1
     return getViewControllerAtIndex(index:index)
   }
+  
+/**********************/
+//   TUTORIAL CODE
+/***********************/
   
  /* @IBOutlet weak var basketTop: UIImageView!
   @IBOutlet weak var basketBottom: UIImageView!

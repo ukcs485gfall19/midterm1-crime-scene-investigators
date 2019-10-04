@@ -49,13 +49,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
   //END PLAYING SOUNDS FUNCTION
   
-  
-  
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     
     playSound(file: "bark", ext: "mp3") // CALLING PLAYING SOUND FUNCTION.
-    //Thread.sleep(forTimeInterval: 2.0)  // Delaying launchscreen so sound can fully play
     
     return true
   }

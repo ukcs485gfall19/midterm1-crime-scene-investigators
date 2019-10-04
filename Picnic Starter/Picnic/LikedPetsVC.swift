@@ -10,9 +10,15 @@ import UIKit
 
 class LikedPetsVC: UITableViewController {
 
-    override func viewDidLoad() {
+  @IBOutlet weak var petName: UILabel!
+  @IBOutlet var table: UITableView!
+  
+  var names: [String] = likedPets // Setting dog names equal to this
+                                  // likePets is global from ViewController
+  
+  override func viewDidLoad() {
         super.viewDidLoad()
-
+        table.tableFooterView = UIView(frame: CGRect.zero) //setting table to not show blank rows
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -23,24 +29,22 @@ class LikedPetsVC: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1  //setting table to only have 1 section
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+      return names.count  //setting rows equal to the number of pets in array
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        // "rows" is identifier for row in Table View
+        let cell = tableView.dequeueReusableCell(withIdentifier: "rows", for: indexPath)
 
-        // Configure the cell...
-
+        // Configuring the cell...
+        cell.textLabel?.text = names[indexPath.row] // adding names array to rows
         return cell
     }
-    */
+  
 
     /*
     // Override to support conditional editing of the table view.
