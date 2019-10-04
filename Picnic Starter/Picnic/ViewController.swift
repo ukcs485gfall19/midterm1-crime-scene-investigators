@@ -29,13 +29,12 @@
 import UIKit
 import AVFoundation
 
-
+var arrPageTitle: NSArray = NSArray()
+var arrPagePhoto: NSArray = NSArray()
+var arrVisited: [Bool] = []
 
 class ViewController: UIPageViewController, UIPageViewControllerDataSource {
-  
-  var arrPageTitle: NSArray = NSArray()
-  var arrPagePhoto: NSArray = NSArray()
-  var arrVisited: [Bool] = []
+
   
   override func viewDidLoad() {
     super.viewDidLoad()
