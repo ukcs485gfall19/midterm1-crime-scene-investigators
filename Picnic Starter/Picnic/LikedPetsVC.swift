@@ -13,7 +13,7 @@ class LikedPetsVC: UITableViewController {
   @IBOutlet weak var petName: UILabel!
   @IBOutlet var table: UITableView!
   
-  var names: [String] = arrPageTitle as! [String] // Setting dog names equal to this
+  var names: [String] = likedPets // Setting dog names equal to this
   
   override func viewDidLoad() {
         super.viewDidLoad()

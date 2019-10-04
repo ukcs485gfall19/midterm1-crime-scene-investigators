@@ -33,6 +33,9 @@ var arrPageTitle: NSArray = NSArray()
 var arrPagePhoto: NSArray = NSArray()
 var arrVisited: [Bool] = []
 
+var likedPets: [String] = []
+var dislikedPets: [String] = []
+
 class ViewController: UIPageViewController, UIPageViewControllerDataSource {
 
   
@@ -58,12 +61,14 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
   
     return pageContentViewController
   }
-  
+  var counter = 0
   /***********************/
   func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
   {
+    
     let pageContent: PageContentViewController = viewController as! PageContentViewController
     var index = pageContent.pageIndex
+    let actualIndex = index
     if (index == NSNotFound)
     {
       return nil;
@@ -71,8 +76,17 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
     index+=1;
     if (index == arrPageTitle.count)
     {
+      print("swipe left")
+      print(actualIndex)
+      dislikedPets.append(arrPageTitle[actualIndex] as! String)
       return getViewControllerAtIndex(index: 0)
     }
+    if counter != 0 {
+      print("swipe left")
+      print(actualIndex)
+      dislikedPets.append(arrPageTitle[actualIndex] as! String)
+    }
+    counter+=1
     return getViewControllerAtIndex(index: index)
   }
   
@@ -81,14 +95,24 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
   {
     let pageContent: PageContentViewController = viewController as! PageContentViewController
     var index = pageContent.pageIndex
+    let actualIndex = index
     if (index == NSNotFound)
     {
       return nil
     }
     if (index == 0){
+      print("swipe right")
+      print(actualIndex)
+      likedPets.append(arrPageTitle[actualIndex] as! String)
       return getViewControllerAtIndex(index: arrPageTitle.count-1)
     }
     index-=1;
+    if counter != 0 {
+      print("swipe right")
+      print(actualIndex)
+      likedPets.append(arrPageTitle[actualIndex] as! String)
+    }
+    counter+=1
     return getViewControllerAtIndex(index:index)
   }
   
