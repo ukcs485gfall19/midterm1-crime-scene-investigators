@@ -1,16 +1,17 @@
 //
-//  PetInfoTableVC.swift
+//  PetInfoTableViewController.swift
 //  Picnic
 //
-//  Created by  on 10/3/19.
+//  Created by Cameron Lydon on 10/4/19.
 //  Copyright © 2019 Ray Wenderlich. All rights reserved.
 //
 
 import UIKit
 
-class PetInfoTableVC: UITableViewController {
 
-    override func viewDidLoad() {
+class PetInfoTableViewController: UITableViewController {
+    
+  override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
@@ -23,24 +24,26 @@ class PetInfoTableVC: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+       
+        return 1
     }
+  
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+      let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
+      cell.textLabel?.text = "Name: \(arrPageTitle[globalIndex])"
+      return cell
     }
-    */
+    /*override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+      return "Section \(section)"
+    
+    }*/
 
     /*
     // Override to support conditional editing of the table view.

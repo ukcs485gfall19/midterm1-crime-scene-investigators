@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1ED640F12346AD28007E7640 /* PetInfoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED640F02346AD28007E7640 /* PetInfoTableVC.swift */; };
 		1ED640F32346B1A5007E7640 /* LikedPetsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED640F22346B1A5007E7640 /* LikedPetsVC.swift */; };
 		224EE8DC23417DA500865F2B /* bark.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 224EE8DB23417DA500865F2B /* bark.mp3 */; };
 		22BE99FB2342C9BA00BA8ABD /* LaunchAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE99FA2342C9BA00BA8ABD /* LaunchAnimation.swift */; };
@@ -16,12 +15,12 @@
 		8EFF274D1A3DA28C00FAFE70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFF274C1A3DA28C00FAFE70 /* Images.xcassets */; };
 		8EFF27671A3DB36400FAFE70 /* squish.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8EFF27661A3DB36400FAFE70 /* squish.caf */; };
 		A493C8372341089700E568E2 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A493C8362341089700E568E2 /* PageContentViewController.swift */; };
+		E04E7AD62347F2BE0026DF14 /* PetInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04E7AD52347F2BE0026DF14 /* PetInfoTableViewController.swift */; };
 		F56634BB209E3C88005A65A5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56634BA209E3C88005A65A5 /* Launch Screen.storyboard */; };
 		F585BD3C2098F88600166230 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F585BD3A2098F88600166230 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1ED640F02346AD28007E7640 /* PetInfoTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInfoTableVC.swift; sourceTree = "<group>"; };
 		1ED640F22346B1A5007E7640 /* LikedPetsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPetsVC.swift; sourceTree = "<group>"; };
 		224EE8DB23417DA500865F2B /* bark.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bark.mp3; sourceTree = "<group>"; };
 		22BE99FA2342C9BA00BA8ABD /* LaunchAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAnimation.swift; sourceTree = "<group>"; };
@@ -32,6 +31,7 @@
 		8EFF274C1A3DA28C00FAFE70 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8EFF27661A3DB36400FAFE70 /* squish.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = squish.caf; sourceTree = "<group>"; };
 		A493C8362341089700E568E2 /* PageContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		E04E7AD52347F2BE0026DF14 /* PetInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInfoTableViewController.swift; sourceTree = "<group>"; };
 		F56634BA209E3C88005A65A5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F585BD3B2098F88600166230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,10 +70,10 @@
 			children = (
 				8EFF27651A3DB36400FAFE70 /* Sounds */,
 				8EFF27451A3DA28C00FAFE70 /* AppDelegate.swift */,
+				E04E7AD52347F2BE0026DF14 /* PetInfoTableViewController.swift */,
 				22BE99FA2342C9BA00BA8ABD /* LaunchAnimation.swift */,
 				8EFF27471A3DA28C00FAFE70 /* ViewController.swift */,
 				A493C8362341089700E568E2 /* PageContentViewController.swift */,
-				1ED640F02346AD28007E7640 /* PetInfoTableVC.swift */,
 				1ED640F22346B1A5007E7640 /* LikedPetsVC.swift */,
 				F585BD3A2098F88600166230 /* Main.storyboard */,
 				8EFF274C1A3DA28C00FAFE70 /* Images.xcassets */,
@@ -174,10 +174,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A493C8372341089700E568E2 /* PageContentViewController.swift in Sources */,
-				1ED640F12346AD28007E7640 /* PetInfoTableVC.swift in Sources */,
 				1ED640F32346B1A5007E7640 /* LikedPetsVC.swift in Sources */,
 				22BE99FB2342C9BA00BA8ABD /* LaunchAnimation.swift in Sources */,
 				8EFF27481A3DA28C00FAFE70 /* ViewController.swift in Sources */,
+				E04E7AD62347F2BE0026DF14 /* PetInfoTableViewController.swift in Sources */,
 				8EFF27461A3DA28C00FAFE70 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
