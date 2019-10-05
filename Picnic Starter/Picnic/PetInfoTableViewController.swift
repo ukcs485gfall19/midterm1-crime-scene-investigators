@@ -30,14 +30,14 @@ class PetInfoTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
-        return 1
+      return arrPageTitle.count
     }
   
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
-      cell.textLabel?.text = "Name: \(arrPageTitle[globalIndex])"
+      cell.textLabel?.text = "Name: \(arrPageTitle[indexPath.row])\n"
       return cell
     }
     /*override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
