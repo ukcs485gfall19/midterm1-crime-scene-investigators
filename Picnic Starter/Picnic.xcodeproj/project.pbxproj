@@ -15,6 +15,7 @@
 		8EFF274D1A3DA28C00FAFE70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFF274C1A3DA28C00FAFE70 /* Images.xcassets */; };
 		8EFF27671A3DB36400FAFE70 /* squish.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8EFF27661A3DB36400FAFE70 /* squish.caf */; };
 		A493C8372341089700E568E2 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A493C8362341089700E568E2 /* PageContentViewController.swift */; };
+		A493C83B23483F0B00E568E2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A493C83A23483F0B00E568E2 /* README.md */; };
 		E04E7AD62347F2BE0026DF14 /* PetInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04E7AD52347F2BE0026DF14 /* PetInfoTableViewController.swift */; };
 		F56634BB209E3C88005A65A5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56634BA209E3C88005A65A5 /* Launch Screen.storyboard */; };
 		F585BD3C2098F88600166230 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F585BD3A2098F88600166230 /* Main.storyboard */; };
@@ -31,6 +32,8 @@
 		8EFF274C1A3DA28C00FAFE70 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8EFF27661A3DB36400FAFE70 /* squish.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = squish.caf; sourceTree = "<group>"; };
 		A493C8362341089700E568E2 /* PageContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		A493C83A23483F0B00E568E2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../../Documents/README.md; sourceTree = "<group>"; };
+		A493C83C23483F1000E568E2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E04E7AD52347F2BE0026DF14 /* PetInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInfoTableViewController.swift; sourceTree = "<group>"; };
 		F56634BA209E3C88005A65A5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F585BD3B2098F88600166230 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 		8EFF27371A3DA28C00FAFE70 = {
 			isa = PBXGroup;
 			children = (
+				A493C83C23483F1000E568E2 /* README.md */,
 				8EFF27421A3DA28C00FAFE70 /* Picnic */,
 				8EFF27411A3DA28C00FAFE70 /* Products */,
 			);
@@ -70,6 +74,7 @@
 			children = (
 				8EFF27651A3DB36400FAFE70 /* Sounds */,
 				8EFF27451A3DA28C00FAFE70 /* AppDelegate.swift */,
+				A493C83A23483F0B00E568E2 /* README.md */,
 				E04E7AD52347F2BE0026DF14 /* PetInfoTableViewController.swift */,
 				22BE99FA2342C9BA00BA8ABD /* LaunchAnimation.swift */,
 				8EFF27471A3DA28C00FAFE70 /* ViewController.swift */,
@@ -158,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A493C83B23483F0B00E568E2 /* README.md in Resources */,
 				F585BD3C2098F88600166230 /* Main.storyboard in Resources */,
 				224EE8DC23417DA500865F2B /* bark.mp3 in Resources */,
 				8EFF27671A3DB36400FAFE70 /* squish.caf in Resources */,
